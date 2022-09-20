@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.hp_user.goalbehavioranalysis"
+    android:installLocation="preferExternal">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:name=".MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".FirstrIp_Activity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Home_Activity" />
+        <activity android:name=".CheckWorkSpot_Activity" />
+        <activity android:name=".CheckBehavior_Activity" />
+        <activity android:name=".CheckAnalysisOutcome_Activity" />
+        <activity android:name=".InputOldPassword_Activity" />
+        <activity android:name=".AllWorkSpot_Activity" />
+        <activity android:name=".AllWorkSpotEfficiency_Activity" />
+        <activity android:name=".WorkSpotYear_Activity" />
+        <activity android:name=".MonthOfYearEfficiency_Activity" />
+        <activity android:name=".WorkSpotMonth_Activity" />
+        <activity android:name=".DayOfMonthEfficiency_Activity" />
+        <activity android:name=".InputNewPassword_Activity" />
+        <activity android:name=".AddWorkSpot" />
+        <activity android:name=".Login_Activity" />
+        <activity android:name=".CheckOutcome"></activity>
+    </application>
+
+</manifest>

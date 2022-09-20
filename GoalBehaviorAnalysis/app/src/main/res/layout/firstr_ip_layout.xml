@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+
+    <TextView
+        android:id="@+id/iptext"
+        android:layout_width="60dp"
+        android:layout_height="50dp"
+        android:text="IP："
+        android:textSize="45px"
+        android:gravity="center"
+        android:layout_marginTop="185dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignLeft="@+id/ok_ip"
+        android:layout_alignStart="@+id/ok_ip" />
+    <EditText
+        android:id="@+id/edit_ip"
+        android:layout_width="160dp"
+        android:layout_height="50dp"
+        android:layout_alignTop="@+id/iptext"
+        android:layout_toRightOf="@+id/iptext"
+        android:layout_alignRight="@+id/ok_ip"
+        android:layout_alignEnd="@+id/ok_ip" />
+    <Button
+        android:id="@+id/ok_ip"
+        android:layout_width="265dp"
+        android:layout_height="51dp"
+        android:background="#006BCC"
+        android:layout_marginTop="44dp"
+        android:layout_gravity="center"
+        android:text=" 确          定 "
+        android:textSize="45px"
+        android:layout_below="@+id/iptext"
+        android:layout_centerHorizontal="true" />
+
+
+    </RelativeLayout>

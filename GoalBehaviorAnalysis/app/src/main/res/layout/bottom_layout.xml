@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="120dp">
+
+
+    <LinearLayout
+        android:id="@+id/id_tab_suoyougongweixiaolv"
+        android:layout_width="210dp"
+        android:layout_height="60dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:weightSum="1">
+        <!-- android:clickable="false" 是为了防止ImageButton截取了触摸事件 ，这里事件要给它的上一级linearlayout-->
+
+        <TextView
+            android:id="@+id/text_suoyougongwei"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="所有工位总工作效率"
+            android:textSize="40px"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/id_tab_gegongweitongji"
+        android:layout_width="160dp"
+        android:layout_height="60dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:weightSum="1"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true">
+        <!-- android:clickable="false" 是为了防止ImageButton截取了触摸事件 ，这里事件要给它的上一级linearlayout-->
+
+        <TextView
+            android:id="@+id/text_gegongweitongji"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="各工位统计图"
+            android:textSize="40px"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/id_tab_gegongweiniantongji"
+        android:layout_width="210dp"
+        android:layout_height="60dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:weightSum="1"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+        <!-- android:clickable="false" 是为了防止ImageButton截取了触摸事件 ，这里事件要给它的上一级linearlayout-->
+
+        <TextView
+            android:id="@+id/text_gegongweiniantongji"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="某工位年统计图"
+            android:textSize="40px" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/id_tab_gegongweiyuetongji"
+        android:layout_width="160dp"
+        android:layout_height="60dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:weightSum="1"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true">
+        <!-- android:clickable="false" 是为了防止ImageButton截取了触摸事件 ，这里事件要给它的上一级linearlayout-->
+
+        <TextView
+            android:id="@+id/text_gegongweiyuetongji"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="某工位月统计图"
+            android:textSize="40px"
+            />
+    </LinearLayout>
+
+</RelativeLayout>

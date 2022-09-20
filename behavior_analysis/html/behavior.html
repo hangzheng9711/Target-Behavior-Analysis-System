@@ -1,0 +1,140 @@
+<!DOCTYPE=html>
+<html>
+<head>
+<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>查看行为信息</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Free HTML5 Website Template by freehtml5.co" />
+	<meta name="keywords" content="free website templates, free html5, free template, free bootstrap, free website template, html5, css3, mobile first, responsive" />
+	<meta name="author" content="freehtml5.co" />
+  	<!-- Facebook and Twitter integration -->
+	<meta property="og:title" content=""/>
+	<meta property="og:image" content=""/>
+	<meta property="og:url" content=""/>
+	<meta property="og:site_name" content=""/>
+	<meta property="og:description" content=""/>
+	<meta name="twitter:title" content="" />
+	<meta name="twitter:image" content="" />
+	<meta name="twitter:url" content="" />
+	<meta name="twitter:card" content="" />
+	<link href="https://fonts.googleapis.com/css?family=Work+Sans:300,400,500,700,800" rel="stylesheet">
+	<!-- Animate.css -->
+	<link rel="stylesheet" href="../assets/css/animate1.css">
+	<!-- Icomoon Icon Fonts-->
+	<link rel="stylesheet" href="../assets/css/icomoon.css">
+	<!-- Bootstrap  -->
+	<link rel="stylesheet" href="../assets/css/bootstrap1.css">
+	<!-- Theme style  -->
+	<link rel="stylesheet" href="../assets/css/style1.css">
+	<!-- Modernizr JS -->
+	<script src="../assets/js/modernizr-2.6.2.min.js"></script>
+	<!-- FOR IE9 below -->
+	<!--[if lt IE 9]>
+	<script src="js/respond.min.js"></script>
+	<![endif]-->
+<script src="../assets/js/cookie.js"></script>
+<script src="../assets/js/jquery-2.1.0.js"></script>
+   
+   <script type="text/javascript">
+   	 var today = new Date();//获得当前日期
+     var year = today.getFullYear();//获得年份
+   
+    $(document).ready(function(){
+        var range = 800;              //距下边界长度/单位px
+        var maxnum = 2000;           //设置加载最多次数
+        var num = 1;
+		var totalheight=0;
+		var max_count=0;
+        var main = $("#content");     //主体元素
+        $(window).scroll(function(){
+       	var srollPos = $(window).scrollTop();    //滚动条距顶部距离(页面超出窗口的高度) 
+            //console.log("滚动条到顶部的垂直高度: "+$(document).scrollTop());
+            //console.log("页面的文档高度 ："+$(document).height());
+            //console.log('浏览器的高度：'+$(window).height());
+            totalheight = parseFloat($(window).height()) + parseFloat(srollPos);
+	
+	//数据库连接			
+	var data={"year":year,"startpoint":(num-1)*8+1,"list_len":8};
+   var jsonstr_send=JSON.stringify(data);//将json对象转换为json字符串
+         $.ajax
+		 ({ 
+		  type:"POST",
+         url:"../assets/php/getBehavior.php",
+         async:false,
+		 data:{'json':jsonstr_send},//发送json字符串
+		  error: function(){
+             document.getElementById("hint").innerHTML="请求超时！"  
+         }, 
+         success:function(result){json_receive =eval('(' + result + ')');} //接受json字符串并将json字符串转换为json对象
+        }); 
+			 
+			if(($(document).height()-range) <= totalheight  && num != maxnum && max_count==0) {
+				//判断是否接收完所有值
+			 	if(Object.keys(json_receive).length<8)
+				{
+					max_count=1;
+					for(i=0;i<Object.keys(json_receive).length;i++)
+			  {  
+				main.append('<div>'+'<span class="fh5co-post-date"> '+json_receive[i].start_time+'－'+json_receive[i].stop_time+'</span><h2>'+json_receive[i].station_number+'号工位</h2><p>'+json_receive[i].feature+'</p></div>');
+			  }
+				}
+				else{
+              for(i=0;i<8;i++)
+			  {  
+				main.append('<div>'+'<span class="fh5co-post-date"> '+json_receive[i].start_time+'－'+json_receive[i].stop_time+'</span><h2>'+json_receive[i].station_number+'号工位</h2><p>'+json_receive[i].feature+'</p></div>');
+			  }
+				}
+			  num++;
+            }
+        });
+    });
+    </script>
+</head>
+<body>
+
+<script>
+if(!getCookie("account_number_cookie")) window.open("login.html","_self");
+</script>
+	<div class="fh5co-loader"></div>
+
+	<div id="page">
+		<div id="fh5co-aside" style="background-image: url(../assets/img/image_1.jpg)">
+			<div class="overlay"></div>
+			<nav role="navigation">
+				<ul>
+					<li><a href="index.html"><i class="icon-home"></i></a></li>
+				</ul>
+			</nav>
+			<div class="featured">
+				<h2>行为信息</h2>
+			</div>
+		</div>
+		
+        <div id="fh5co-main-content">
+			<div class="fh5co-post">
+            <div class="fh5co-entry padding">
+            <div>
+            <h2>下拉加载数据</h2>
+            </div>
+                  </div>
+                 <div id="content" class="fh5co-entry padding">
+                  </div>
+			</div>
+		</div>
+    </div>
+    
+    	<!-- jQuery -->
+	<script src="../assets/js/jquery.min.js"></script>
+	<!-- jQuery Easing -->
+	<script src="../assets/js/jquery.easing.1.3.js"></script>
+	<!-- Bootstrap -->
+	<script src="../assets/js/bootstrap.min.js"></script>
+	<!-- Waypoints -->
+	<script src="../assets/js/jquery.waypoints.min.js"></script>
+	<!-- Stellar Parallax -->
+	<script src="../assets/js/jquery.stellar.min.js"></script>
+	<!-- Main -->
+	<script src="../assets/js/main1.js"></script>
+</body>
+</html>

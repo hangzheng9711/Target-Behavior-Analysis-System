@@ -1,0 +1,127 @@
+<!doctype html>
+<html>
+
+<head>
+<meta charset="UTF-8">
+<title>登录</title>
+<style type="text/css">
+#title_div {
+	height: 50px;
+	width: 400px;
+	margin-top: 200px;
+	font-style: normal;
+	font-size: 40px;
+	text-align: left;
+	font-weight: 500;
+	color: #5E5E5E;
+	letter-spacing: 2px;
+}
+#account_number_div {
+	height: 20px;
+	width: 300px;
+	margin-top: 30px;
+	font-style: normal;
+	text-align: left;
+	font-size: 15px;
+	padding-left: 20px;
+	font-weight: 200;
+	color: #5E5E5E;
+}
+#account_number_input_div {
+	height: 25px;
+	width: 300px;
+	margin-top: 5px;
+	padding-left: 20px;
+	font-style: normal;
+	font-size: 50px;
+}
+#password_div {
+	height: 20px;
+	width: 300px;
+	margin-top: 10px;
+	font-style: normal;
+	text-align: left;
+	font-size: 15px;
+	padding-left: 20px;
+	font-weight: 200;
+	color: #5E5E5E;
+}
+#password_input_div {
+	height: 25px;
+	width: 300px;
+	margin-top: 5px;
+	padding-left: 20px;
+}
+#account_number {
+	float: left;
+	height: 25px;
+	width: 250px;
+	border-radius: 5px;
+	font-style: normal;
+	font-size: 15px;
+	font-weight: 200;
+	text-align: left;
+}
+#password {
+	float: left;
+	height: 25px;
+	width: 250px;
+	border-radius: 5px;
+	font-style: normal;
+	font-size: 15px;
+	font-weight: 200;
+	text-align: left;
+}
+#ok {
+	float: left;
+	height: 40px;
+	width: 120px;
+	border-radius: 5px;
+	background-color: #389AA2;
+	color: #FFFFFF;
+	font-style: normal;
+	font-size: 20px;
+	font-weight: 500;
+}
+#ok_div {
+	height: 40px;
+	width: 300px;
+	margin-top: 40px;
+	padding-left: 140px;
+}
+body {
+	background-image: url(../assets/img/bg0.jpg);
+	background-repeat:no-repeat;
+}
+#txtHint {
+	color: #FF0000;
+}
+</style>
+<script src="../assets/js/data/login_data_js.js?+Math.random()"></script>
+<script src="../assets/js/jquery-2.1.0.js"></script>
+<script src="../assets/js/cookie.js"></script>
+</head>
+
+<body>
+<center>
+<div id="title_div">&nbsp;&nbsp;目标行为分析系统</div>
+<div id="account_number_div">账号：
+</div>
+<div id="account_number_input_div">
+<input name="account_number" type="text" id="account_number" placeholder="请输入账号" maxlength="16">
+</div>
+<div id="password_div">密码：
+</div>
+<div id="password_input_div">
+<input name="password" type="password" id="password" placeholder="请输入密码" maxlength="16">
+</div>
+<div id="ok_div">
+  <input type="submit" name="ok" id="ok" value="登录" onClick="login_data(account_number.value,password.value)">
+</div>
+<p>
+<div id="txtHint"><b></b></div>
+</p>
+</center>
+</body>
+
+</html>

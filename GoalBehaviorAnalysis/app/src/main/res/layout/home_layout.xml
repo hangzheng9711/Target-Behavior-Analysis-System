@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+
+    <Button
+        android:id="@+id/logout"
+        android:layout_width="100dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="0dp"
+        android:layout_gravity="right"
+        android:text="退出登录"
+        android:textSize="35px"
+        android:layout_weight="0.12" />
+    <Button
+        android:id="@+id/exit"
+        android:layout_width="100dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="0dp"
+        android:layout_gravity="right"
+        android:text="退出系统"
+        android:textSize="35px"
+        android:layout_weight="0.12" />
+    <Button
+        android:id="@+id/check_workspot"
+        android:layout_width="265dp"
+        android:layout_height="51dp"
+        android:background="#D2E9FF"
+        android:layout_marginTop="50dp"
+        android:layout_gravity="center"
+        android:text="查看工位信息"
+        android:textSize="45px"
+        />
+    <Button
+        android:id="@+id/check_behavior"
+        android:layout_width="265dp"
+        android:layout_height="51dp"
+        android:background="#D2E9FF"
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center"
+        android:text="查看行为信息"
+        android:textSize="45px"
+        />
+    <Button
+        android:id="@+id/check_analysis_outcome"
+        android:layout_width="265dp"
+        android:layout_height="51dp"
+        android:background="#D2E9FF"
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center"
+        android:text="查看统计分析结果"
+        android:textSize="45px"
+        />
+    <Button
+        android:id="@+id/change_password"
+        android:layout_width="265dp"
+        android:layout_height="51dp"
+        android:background="#D2E9FF"
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center"
+        android:text="修改密码"
+        android:textSize="45px"
+        />
+
+
+</LinearLayout>

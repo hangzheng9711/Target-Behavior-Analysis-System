@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.percent.PercentFrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.github.mikephil.charting.charts.LineChart
+        android:id="@+id/LineChart1"
+        app:layout_widthPercent="70%"
+        app:layout_heightPercent="50%"
+        android:layout_gravity="center"
+        app:layout_marginTopPercent="5%"
+        android:layout_weight="1"/>
+
+    <Button
+        android:id="@+id/return_home_6"
+        android:layout_marginTop="0dp"
+        android:layout_gravity="left|top"
+        app:layout_widthPercent="35%"
+        app:layout_heightPercent="8%"
+        android:text="返回主界面"
+        android:textSize="30px" />
+
+
+    <TextView
+        android:id="@+id/spinnerText_6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="120dp"
+        app:layout_widthPercent="40%"
+        app:layout_heightPercent="10%"
+        android:textSize="35px"
+        />
+    <Spinner
+        android:id="@+id/spinner_6"
+        android:layout_width="162dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="120dp"
+        app:layout_widthPercent="40%"
+        app:layout_heightPercent="10%"
+        />
+    <TextView
+        android:id="@+id/spinnerText_7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right|top"
+        app:layout_widthPercent="20%"
+        app:layout_heightPercent="10%"
+        android:textSize="35px"
+        />
+    <Spinner
+        android:id="@+id/spinner_7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right|top"
+        app:layout_widthPercent="20%"
+        app:layout_heightPercent="10%"
+        />
+    <EditText
+        android:id="@+id/workspot"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="40dp"
+        android:textSize="35px"
+        app:layout_heightPercent="10%"
+        app:layout_widthPercent="15%"
+        />
+    <TextView
+        android:id="@+id/text_workspot"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="60dp"
+        android:text="号工位"
+        android:textSize="35px"
+        app:layout_heightPercent="10%"
+        app:layout_widthPercent="20%" />
+
+    <EditText
+        android:id="@+id/year"
+        android:layout_marginLeft="120dp"
+        android:layout_marginTop="40dp"
+        android:textSize="35px"
+        app:layout_heightPercent="10%"
+        app:layout_widthPercent="20%"
+        />
+
+    <TextView
+        android:id="@+id/text_year"
+        android:layout_marginLeft="200dp"
+        android:layout_marginTop="60dp"
+        android:text="年"
+        android:textSize="35px"
+        app:layout_heightPercent="10%"
+        app:layout_widthPercent="20%" />
+    <Button
+        android:id="@+id/ack_year"
+        android:layout_marginLeft="250dp"
+        android:layout_marginTop="50dp"
+        android:text="确定"
+        android:textSize="35px"
+        app:layout_heightPercent="8%"
+        app:layout_widthPercent="20%" />
+
+
+
+</android.support.percent.PercentFrameLayout>

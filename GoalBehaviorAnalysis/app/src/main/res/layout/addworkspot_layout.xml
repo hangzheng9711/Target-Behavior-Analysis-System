@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.percent.PercentFrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/return_home11"
+        android:layout_marginTop="0dp"
+        android:layout_gravity="left|top"
+        app:layout_widthPercent="35%"
+        app:layout_heightPercent="8%"
+        android:text="返回主界面"
+        android:textSize="30px" />
+    <Button
+        android:id="@+id/ok_add"
+        android:layout_marginTop="0dp"
+        android:layout_marginLeft="300dp"
+        android:layout_gravity="top"
+        app:layout_widthPercent="18%"
+        app:layout_heightPercent="8%"
+        android:text="确 认"
+        android:textSize="30px" />
+    <TextView
+        android:id="@+id/text_add1"
+        android:layout_marginTop="75dp"
+        android:layout_width="90dp"
+        android:text=" 工 位 号:"
+        android:textSize="36px"
+        android:layout_height="37dp"
+        android:layout_weight="0.00" />
+    <EditText
+        android:id="@+id/edit_add1"
+        android:layout_marginTop="70dp"
+        android:layout_marginLeft="90dp"
+        android:layout_width="90dp"
+        android:textSize="36px"
+        android:layout_height="35dp"
+        android:layout_weight="0.00"
+        android:editable="false"
+        />
+    <TextView
+        android:id="@+id/text_add2"
+        android:layout_marginTop="115dp"
+        android:layout_width="90dp"
+        android:text=" 横 坐 标:"
+        android:textSize="36px"
+        android:layout_height="37dp"
+        android:layout_weight="0.00" />
+    <EditText
+        android:id="@+id/edit_add2"
+        android:layout_marginTop="110dp"
+        android:layout_marginLeft="90dp"
+        android:layout_width="90dp"
+        android:textSize="36px"
+        android:layout_height="35dp"
+        android:layout_weight="0.00"
+        />
+    <TextView
+        android:id="@+id/text_add3"
+        android:layout_width="90dp"
+        android:layout_height="37dp"
+        android:layout_marginTop="155dp"
+        android:layout_weight="0.00"
+        android:text=" 纵 坐 标:"
+        android:textSize="36px" />
+
+    <EditText
+        android:id="@+id/edit_add3"
+        android:layout_marginTop="150dp"
+        android:layout_marginLeft="90dp"
+        android:layout_width="90dp"
+        android:textSize="36px"
+        android:layout_height="35dp"
+        android:layout_weight="0.00"
+        />
+    <TextView
+        android:id="@+id/text_add4"
+        android:layout_marginTop="195dp"
+        android:layout_width="90dp"
+        android:text=" 长     度 : "
+        android:textSize="36px"
+        android:layout_height="37dp"
+        android:layout_weight="0.00" />
+    <EditText
+        android:id="@+id/edit_add4"
+        android:layout_marginTop="190dp"
+        android:layout_marginLeft="90dp"
+        android:layout_width="90dp"
+        android:textSize="36px"
+        android:layout_height="35dp"
+        android:layout_weight="0.00"
+        />
+    <TextView
+        android:id="@+id/text_add5"
+        android:layout_marginTop="235dp"
+        android:layout_width="90dp"
+        android:text=" 宽     度 :"
+        android:textSize="36px"
+        android:layout_height="37dp"
+        android:layout_weight="0.00" />
+    <EditText
+        android:id="@+id/edit_add5"
+        android:layout_marginTop="230dp"
+        android:layout_marginLeft="90dp"
+        android:layout_width="90dp"
+        android:textSize="36px"
+        android:layout_height="35dp"
+        android:layout_weight="0.00"
+        />
+
+    <TextView
+        android:id="@+id/text_add6"
+        android:layout_marginTop="275dp"
+        android:layout_width="100dp"
+        android:text="摄像头编号:"
+        android:textSize="36px"
+        android:layout_height="37dp"
+        android:layout_weight="0.00" />
+
+
+    <EditText
+        android:id="@+id/edit_add6"
+        android:layout_width="90dp"
+        android:layout_height="35dp"
+        android:layout_marginLeft="90dp"
+        android:layout_marginTop="270dp"
+        android:layout_weight="0.00"
+        android:textSize="36px" />
+
+
+</android.support.percent.PercentFrameLayout>
+

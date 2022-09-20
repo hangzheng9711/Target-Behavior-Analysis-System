@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <Button
+        android:id="@+id/return_home_4"
+        android:layout_marginTop="0dp"
+        android:layout_gravity="left|top"
+       android:layout_height="50dp"
+        android:layout_width="140dp"
+        android:text="返回主界面"
+        android:textSize="40px" />
+    <Button
+        android:id="@+id/add"
+        android:layout_gravity="right|top"
+        android:layout_height="50dp"
+        android:layout_width="100dp"
+        android:text="添加"
+        android:textSize="40px"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:id="@+id/textviewgongweihao"
+        android:layout_width="65dp"
+        android:text="工位号"
+
+        android:textSize="34px"
+        android:layout_height="30dp"
+        android:layout_weight="0.00"
+        android:layout_below="@+id/return_home_4"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+    <TextView
+        android:id="@+id/textviewx"
+        android:layout_width="60dp"
+        android:text="横坐标"
+        android:textSize="34px"
+        android:layout_height="30dp"
+        android:layout_weight="0.00"
+        android:layout_alignBaseline="@+id/textviewgongweihao"
+        android:layout_alignBottom="@+id/textviewgongweihao"
+        android:layout_toRightOf="@+id/textviewgongweihao"
+        android:layout_toEndOf="@+id/textviewgongweihao" />
+    <TextView
+        android:id="@+id/textviewy"
+        android:layout_width="60dp"
+        android:text="纵坐标"
+        android:textSize="34px"
+        android:layout_height="30dp"
+        android:layout_weight="0.00"
+        android:layout_alignBaseline="@+id/textviewx"
+        android:layout_alignBottom="@+id/textviewx"
+        android:layout_toRightOf="@+id/textviewx"
+        android:layout_toEndOf="@+id/textviewx" />
+    <TextView
+        android:id="@+id/textviewlength"
+        android:layout_width="60dp"
+        android:text="    长度"
+        android:textSize="34px"
+        android:layout_height="30dp"
+        android:layout_weight="0.00"
+        android:layout_alignBaseline="@+id/textviewy"
+        android:layout_alignBottom="@+id/textviewy"
+        android:layout_toRightOf="@+id/return_home_4"
+        android:layout_toEndOf="@+id/return_home_4"
+        android:layout_marginLeft="32dp"
+        android:layout_marginStart="32dp" />
+    <TextView
+        android:id="@+id/textviewwidth"
+        android:layout_width="60dp"
+        android:text=" 宽度"
+        android:textSize="34px"
+        android:layout_height="30dp"
+        android:layout_weight="0.00"
+        android:layout_alignBaseline="@+id/textviewlength"
+        android:layout_alignBottom="@+id/textviewlength"
+        android:layout_toRightOf="@+id/textviewlength"
+        android:layout_toEndOf="@+id/textviewlength" />
+
+    <TextView
+        android:id="@+id/textvieweffi"
+        android:layout_width="100dp"
+        android:text="摄像头编号"
+        android:textSize="34px"
+        android:layout_height="30dp"
+        android:layout_weight="0.00"
+        android:layout_alignBaseline="@+id/textviewwidth"
+        android:layout_alignBottom="@+id/textviewwidth"
+        android:layout_toRightOf="@+id/textviewwidth"
+        android:layout_toEndOf="@+id/textviewwidth" />
+
+
+
+    <ListView
+        android:id="@+id/list_workspot"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textviewgongweihao"
+        android:layout_above="@+id/add">
+    </ListView>
+</RelativeLayout>
+
+
+
